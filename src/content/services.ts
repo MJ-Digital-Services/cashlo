@@ -7,30 +7,19 @@ export type Service = {
   items: string[];
 };
 
+export type FeaturedService = Service & { description: string };
+
+export const featuredService: FeaturedService = {
+  icon: Banknote,
+  title: "UPI Cashpoint",
+  description:
+    "Cardless cash withdrawal using any UPI app. Customers scan, authorise with a UPI PIN, and receive cash instantly — no ATM card needed.",
+  items: ["Cardless withdrawal", "Works with any UPI app", "Instant, secure payout"],
+};
+
 export const services: Service[] = [
-  {
-    icon: Banknote,
-    title: "UPI Cashpoint",
-    items: ["Cardless cash withdrawal", "Works with any UPI app", "Instant, secure payout"],
-  },
-  {
-    icon: Smartphone,
-    title: "Mobile Recharge",
-    items: ["Prepaid mobile", "DTH recharge", "FASTag recharge"],
-  },
-  {
-    icon: ReceiptText,
-    title: "Bill Payments",
-    items: ["Electricity & water", "Gas & broadband", "Mobile postpaid"],
-  },
-  {
-    icon: ShieldCheck,
-    title: "Insurance Services",
-    items: ["Life insurance", "Health insurance", "Personal accident", "Motor insurance"],
-  },
-  {
-    icon: Landmark,
-    title: "Additional Services",
-    items: ["BBPS services", "Utility payments", "Rural financial services", "Digital payments"],
-  },
+  { icon: Smartphone, title: "Mobile Recharge", items: ["Prepaid", "DTH", "FASTag"] },
+  { icon: ReceiptText, title: "Bill Payments", items: ["Electricity", "Water", "Gas", "Broadband"] },
+  { icon: ShieldCheck, title: "Insurance", items: ["Life", "Health", "Motor"] },
+  { icon: Landmark, title: "More Services", items: ["BBPS", "Utility", "Rural"] },
 ];

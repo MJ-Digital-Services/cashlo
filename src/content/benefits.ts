@@ -3,6 +3,7 @@ import { Users, Store } from "lucide-react";
 
 export type BenefitGroup = {
   title: string;
+  tagline: string;
   icon: LucideIcon;
   items: string[];
 };
@@ -10,6 +11,7 @@ export type BenefitGroup = {
 export const benefitGroups: BenefitGroup[] = [
   {
     title: "For Customers",
+    tagline: "Cash, made effortless",
     icon: Users,
     items: [
       "No ATM card required",
@@ -22,6 +24,7 @@ export const benefitGroups: BenefitGroup[] = [
   },
   {
     title: "For Retailers",
+    tagline: "A new income stream",
     icon: Store,
     items: [
       "Additional income opportunities",
