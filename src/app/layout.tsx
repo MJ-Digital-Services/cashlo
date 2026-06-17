@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Inter } from "next/font/google";
 import "./globals.css";
+import { SmoothScroll } from "@/components/providers/smooth-scroll";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -31,7 +32,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${poppins.variable} ${inter.variable}`}>
-      <body>{children}</body>
+      <body>
+        <SmoothScroll>{children}</SmoothScroll>
+      </body>
     </html>
   );
 }

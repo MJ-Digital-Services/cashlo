@@ -23,9 +23,9 @@
 }
 
 @layer base {
-  html {
+  /* html {
     scroll-behavior: smooth;
-  }
+  } */
   body {
     background-color: #ffffff;
     color: var(--color-ink);

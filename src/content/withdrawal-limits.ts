@@ -1,10 +1,11 @@
 export type WithdrawalLimit = {
-  amount: string;
+  value: number;
+  prefix: string;
   label: string;
 };
 
 export const withdrawalLimits: WithdrawalLimit[] = [
-  { amount: "₹5,000", label: "Per Transaction" },
-  { amount: "₹10,000", label: "Per Day" },
-  { amount: "₹50,000", label: "Per Month" },
+  { value: 5000, prefix: "₹", label: "Per Transaction" },
+  { value: 10000, prefix: "₹", label: "Per Day" },
+  { value: 50000, prefix: "₹", label: "Per Month" },
 ];
