@@ -46,7 +46,7 @@ export function PartnerCta() {
       </div>
 
       {/* Mascot — desktop/tablet, pinned to bottom-right of the section, spanning ~half the section width */}
-      <div className="pointer-events-none absolute -bottom-2 right-0 hidden h-auto w-[52%] md:block lg:w-[50%]">
+      <div className="pointer-events-none absolute bottom-25 right-0 hidden h-auto w-[52%] md:block lg:w-[50%]" style={{transform: "scale(1.3)"}}>
         <div className="relative aspect-[5/4] w-full">
           <Image
             src="/partner-cta/cashlo-partner-mascot.png"
