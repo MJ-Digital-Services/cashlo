@@ -19,7 +19,7 @@ export function Hero() {
       <div className="relative flex flex-col items-center px-4 pt-10 text-center md:hidden">
         <div className="relative h-[280px] w-[280px] sm:h-[340px] sm:w-[340px]">
           <Image
-            src="/hero/cashlo-hero-mascot.png"
+            src="/hero/cashlo-hero-mascot1.png"
             alt="Cashlo dukandaar holding phone with UPI app"
             fill
             className="object-contain"
