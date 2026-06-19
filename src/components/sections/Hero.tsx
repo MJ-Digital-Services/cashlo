@@ -10,7 +10,7 @@ export function Hero() {
           src="/hero/cashlo-hero-bg.png"
           alt=""
           fill
-          className="object-cover object-[center_30%]"
+          className="object-cover object-[center_85%]"
           priority
         />
       </div>
