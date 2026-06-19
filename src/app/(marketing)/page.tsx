@@ -3,6 +3,7 @@ import { EarningsBand } from "@/components/sections/EarningsBand";
 import { SoundBoxSection } from "@/components/sections/SoundBoxSection";
 import { QuickServices } from "@/components/sections/QuickServices";
 import { HowItWorks } from "@/components/sections/HowItWorks";
+import { TrustBand } from "@/components/sections/TrustBand";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <SoundBoxSection />
       <QuickServices />
       <HowItWorks />
+      <TrustBand />
     </>
   );
 }
