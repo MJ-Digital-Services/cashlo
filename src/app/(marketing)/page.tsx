@@ -4,6 +4,7 @@ import { SoundBoxSection } from "@/components/sections/SoundBoxSection";
 import { QuickServices } from "@/components/sections/QuickServices";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { TrustBand } from "@/components/sections/TrustBand";
+import { PartnerCta } from "@/components/sections/PartnerCta";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <QuickServices />
       <HowItWorks />
       <TrustBand />
+      <PartnerCta />
     </>
   );
 }
