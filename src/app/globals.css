@@ -1,1 +1,38 @@
 
+@import "tailwindcss";
+
+@theme {
+  /* ---- Brand colors ---- */
+  --color-brand: #E5182A;
+  --color-brand-dark: #C01122;
+  --color-brand-light: #FF4D5E;
+  --color-brand-tint: #FDF0F1;
+
+  /* ---- Neutrals ---- */
+  --color-ink: #1A1A1A;
+  --color-muted: #6B7280;
+  --color-surface: #FFFFFF;
+  --color-border: #F0E0E1;
+
+  /* ---- Status ---- */
+  --color-success: #16A34A;
+  --color-success-tint: #ECFDF3;
+  --color-warning: #F59E0B;
+
+  /* ---- Fonts ---- */
+  --font-sans: var(--font-inter);
+
+  /* ---- Radius (matches app's large rounded cards) ---- */
+  --radius-card: 1.25rem;
+  --radius-pill: 999px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
