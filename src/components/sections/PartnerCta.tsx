@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export function PartnerCta() {
   return (
-    <section className="relative overflow-hidden bg-brand py-10 sm:py-12 md:h-[440px] md:py-0 lg:h-[480px]">
+    <section className="relative overflow-hidden bg-brand pt-10 pb-0 sm:pt-12 sm:pb-0 md:h-[440px] md:py-0 lg:h-[480px]">
       <div className="mx-auto h-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid h-full items-center gap-10 md:grid-cols-2 md:gap-8">
+        <div className="grid gap-6 md:h-full md:grid-cols-2 md:items-center md:gap-8">
           {/* Text column */}
           <div className="relative z-10 text-center md:text-left">
             <span className="text-xs font-semibold uppercase tracking-wider text-white/70 sm:text-sm">
@@ -31,17 +31,20 @@ export function PartnerCta() {
           </div>
 
           {/* Mascot column — mobile only, normal flow */}
-          <div className="relative mx-auto flex w-full max-w-[420px] justify-center md:hidden">
-            <div className="relative aspect-[5/4] w-full max-w-[380px]">
-              <Image
+        <div className="relative mx-auto flex w-full max-w-[420px] justify-center pb-0 pt-2 md:hidden">
+            <div
+                className="relative aspect-[5/4] w-full max-w-[380px]"
+                style={{ transform: "scale(1.25)" }}
+            >
+                <Image
                 src="/partner-cta/cashlo-partner-mascot.png"
                 alt="Cashlo dukandaar standing outside his shop"
                 fill
                 className="object-contain"
                 sizes="90vw"
-              />
+                />
             </div>
-          </div>
+            </div>
         </div>
       </div>
 
